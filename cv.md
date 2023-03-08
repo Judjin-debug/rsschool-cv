@@ -1,4 +1,3 @@
-# [rsschool-cv](https://judjin-debug.github.io/rsschool-cv/cv)
 # Yauheni Najaran
 ### Frontend trainee
 ---

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV</title>
+		<link rel="stylesheet" href="./styles.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	</head>
+	<body>
+		<main>
+			<section class="intro-section">
+				<h1 class="intro-h1">Yauheni Najaran</h1>
+				<div class="intro-div">
+					<p class="intro-p">Frontend trainee</p>
+				</div>
+			</section>
+			<section class="contacts-secion">
+				<h3 class="contacts-h3">Contacts:</h3>
+				<div class="contacts-div">
+					<div class="phone-div">
+						<p class="contacts-title">Phone:</p>
+						<p class="contacts-content">+375 (29) 319-65-79</p>
+					</div>
+					<div class="email-div">
+						<p class="contacts-title">E-mail:</p>
+						<p class="contacts-content">yauheniN27@protonmail.com</p>
+					</div>
+					<div class="telegram-div">
+						<p class="contacts-title">Telegram</p>
+						<p class="contacts-content">@Yauheni_J</p>
+					</div>
+					<div class="linkedin-div">
+						<a 
+							class="linkedin-link" 
+							href="https://www.linkedin.com/in/yauheni-najaran-bb833a228" 
+							target="blank"
+						>
+							<i class="fa fa-linkedin-in"></i>
+							<p class="linkedin-desc">LinkedIn</p>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="bio-section">
+				<h3 class="bio-h3">Little bio:</h3>
+				<div class="bio-div">
+					<div class="bio-div-div">
+						I'm a graduate from BSU Mechanics and Mathematics faculty. I finished it
+						because of having a passion for mathematics. Before attending university, 
+						I had C1 english proficiency level.
+					</div>
+					<div class="bio-div-div">
+						I wanted to try working in a programming job since my student years since 
+						I was half-decent at programming, too. I used to work with Pascal,
+						HTML/CSS/JS, MatLab, Wolfram Mathematica and with DB language (notably also
+						numerical methods / numerical analysis for more mathematics-oriented problems). 
+						I also tried CodeWars  kata challenge, earning 3 kyu rank in just a week or so.
+					</div>
+					<div class="bio-div-div">
+						After 2.5 years of working as a teacher to pay off my academic debt, I tried to 
+						involve myself in programming. I still only have the most superficial 
+						understanding of what the job market wants from me after 2 years.
+					</div>
+				</div>
+			</section>
+			<section class="skills-section">
+				<h3 class="skills-h3">Instruments, libraries and skills:</h3>
+				<div class="skills-div">
+					<ul class="skills-ul">
+						<li class="skills-li">HTML, CSS, JS</li>
+						<li class="skills-li">Java (lambda, streams API, patterns, reflection API)</li>
+						<li class="skills-li">Spring Boot and Hibernate</li>
+						<li class="skills-li">Python (django, plotly, seaborn, pandas, matplotlib, numpy)</li>
+						<li class="skills-li">Git, GitHub</li>
+						<li class="skills-li">SQL (PostgreSQL)</li>
+						<li class="skills-li">VSCode, IntelliJ IDEA, PyCharm, pgAdmin 4, DBeaver, redis</li>
+						<li class="skills-li">Google cloud platform</li>
+						<li class="skills-li">Matlab</li>
+					</ul>
+				</div>
+			</section>
+			<section class="code-section">
+				<h3 class="code-h3">Code example:</h3>
+				<div class="code-div">
+					<p class="code-kata-title">Karnaugh's detonating timer (a k-map primer):</p>
+					<p class="code-desc" id="code-desc-1">
+						You isolated from the circuit the three wires (b2, b1 and b0) used to 
+						represent the units above 9, and wish to use them to light up the 
+						correct segments so to display the A to F letters:
+					</p>
+					<pre class="code-pre" id="code-pre-1">
+b2  b1  b0
+A  0   0   0
+B  0   0   1
+C  0   1   0
+D  0   1   1
+E  1   0   0
+F  1   0   1
+					</pre>
+					<p class="code-desc" id="code-desc-2">
+						We will number the segments of the display as follows: 
+					</p>
+					<pre class="code-pre" id="code-pre-2">
+     1
+    ───
+2  │   │ 3
+    ───   4
+5  │   │ 6
+    ───
+     7
+					</pre>
+					<p class="code-desc" id="code-desc-3">
+						So, for example, if needed to display 'A' (that means all b2, b1 and b0 off), 
+						segments 1, 2, 3, 4, 5 and 6 must be lit; for 'B' (only b0 on), all segments 
+						must be turned on; for 'D' (b1 and b0 on), all segments 
+						but the one numbered 4 should be lit.
+					</p>
+					<p class="code-desc" id="code-desc-4">
+						JavaScript:
+					</p>
+					<pre class="code-pre" id="code-pre-3">
+var segments = [
+    function segment1(b2, b1, b0) {
+        return 1
+	},
+    function segment2(b2, b1, b0) {
+        return 1
+	},
+    function segment3(b2, b1, b0) {
+        return (!b2&!b1&!b0)|(b0&!b2)
+	},
+    function segment4(b2, b1, b0) {
+        return b2|!b1
+	},
+    function segment5(b2, b1, b0) {
+        return 1
+	},
+    function segment6(b2, b1, b0) {
+        return (!b2&!b1&!b0)|(b0&!b2)
+	},
+    function segment7(b2, b1, b0) {
+        return  (b2|b1|b0)&(!b2|b1|!b0)
+	}
+];
+					</pre>
+				</div>
+			</section>
+			<section class="courses-section">
+				<h3 class="courses-h3">Courses:</h3>
+				<div class="courses-div">
+					<ul class="courses-ul">
+						<li class="courses-li">
+							<div class="courses-li-div">
+								<p class="courses-li-desc">
+									freeCodeCamp HTML & CSS course:
+								</p>
+								<img 
+									class="courses-li-img"
+									src="./media/Certificate.png"
+									alt="freeCodeCamp HTML & CSS course certificate"
+								/>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="languages-section">
+				<h3 class="languages-h3">Languages:</h3>
+				<div class="languages-div">
+					<ul class="languages-ul">
+						<li class="languages-li">
+							<div class="languages-li-div">
+								<p class="languages-li-desc">
+									English - Advanced/Proficient (according to the test at www.efset.org)
+								</p>
+								<img 
+									class="languages-li-img"
+									src="./media/en_certificate.png"
+									alt="EF SET english C1-C2 certificate"
+								/>
+							</div>
+						</li>
+						<li class="languages-li">
+							<div class="languages-li-div">
+								<p class="languages-li-desc">
+									Russian - Basic (native)
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

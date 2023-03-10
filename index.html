@@ -114,27 +114,27 @@
 							represent the units above 9, and wish to use them to light up the 
 							correct segments so to display the A to F letters:
 						</p>
-						<pre class="code-pre" id="code-pre-1">
-  b2  b1  b0
+						<code class="code-code" id="code-code-1">
+&nbsp;&nbsp;b2  b1  b0<br>
 A  0   0   0
 B  0   0   1
 C  0   1   0
 D  0   1   1
 E  1   0   0
 F  1   0   1
-						</pre>
+						</code>
 						<p class="code-desc" id="code-desc-2">
 							We will number the segments of the display as follows: 
 						</p>
-						<pre class="code-pre" id="code-pre-2">
-     1
-    ───
+						<code class="code-code" id="code-code-2">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1
+&nbsp;&nbsp;&nbsp;&nbsp;───
 2  │   │ 3
-    ───   4
+&nbsp;&nbsp;&nbsp;&nbsp;───   4
 5  │   │ 6
-    ───
-     7
-						</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;───
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7
+						</code>
 						<p class="code-desc" id="code-desc-3">
 							So, for example, if needed to display 'A' (that means all b2, b1 and b0 off), 
 							segments 1, 2, 3, 4, 5 and 6 must be lit; for 'B' (only b0 on), all segments 
@@ -144,7 +144,7 @@ F  1   0   1
 						<p class="code-desc" id="code-desc-4">
 							JavaScript:
 						</p>
-						<pre class="code-pre" id="code-pre-3">
+						<code class="code-code" id="code-code-3">
 var segments = [
     function segment1(b2, b1, b0) {
         return 1
@@ -168,7 +168,7 @@ var segments = [
         return  (b2|b1|b0)&amp;(!b2|b1|!b0)
     }
 ];
-						</pre>
+						</code>
 					</div>
 				</section>
 				<section id="courses-section">
@@ -178,7 +178,7 @@ var segments = [
 							<li class="courses-li">
 								<div class="courses-li-div">
 									<p class="courses-li-desc">
-										freeCodeCamp HTML & CSS course:
+										freeCodeCamp HTML &amp; CSS course:
 									</p>
 									<a
 										class="img-link"
